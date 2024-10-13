@@ -1,19 +1,13 @@
 package service
 
-import "errors"
+
+var ID int = 0
 
 func AddUser(name, email string) func() (string, string, int) {
-	id := 0
 
 	return func() (string, string, int) {
-		id++
-		return name, email, id
+		ID++
+		return name, email, ID
 	}
 }
 
-func EmptyValues(name, email string) (bool, error) {
-	if name == "" || email == "" {
-		return false, errors.New("Name and email cannot be empty")
-	}
-	return true, nil
-}

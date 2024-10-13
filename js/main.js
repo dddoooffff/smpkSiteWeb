@@ -20,21 +20,3 @@ document.getElementById('addTaskButton').addEventListener('click', function () {
 });
 
 
-document.getElementById('feedbackForm').addEventListener('submit', function (event) {
-    event.preventDefault();
-    
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    
-    const message = document.getElementById('message').value;
-    
-    alert(`Спасибо за ваше сообщение, ${name}!\nМы свяжемся с вами по адресу ${email}.`);
-    
-    document.getElementById('feedbackForm').reset();
-});
-
-
-document.getElementById('themeToggleButton').addEventListener('click', function () {
-    document.body.classList.toggle('dark-theme');
-});
-
