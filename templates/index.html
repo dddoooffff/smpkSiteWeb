@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Учебный проект</title>
+    <link rel="stylesheet" href="/style/style.css">
+</head>
+<body>
+    <header>
+        <h1>Добро пожаловать на наш простой сайт!</h1>
+        <button id="themeToggleButton">Сменить тему</button>
+    </header>
+    <main>
+        <section>
+            <h2>Список задач</h2>
+            <input type="text" id="taskInput" placeholder="Введите задачу...">
+            <button id="addTaskButton">Добавить задачу</button>
+            <ul id="taskList"></ul>
+        </section>
+        <section>
+            <h2>Обратная связь</h2>
+            <form id="feedbackForm" method="post">
+                <input name="name" type="text" id="name" placeholder="Ваше имя" required>
+                <input name="email" type="email" id="email" placeholder="Ваша электронная почта" required>
+                <textarea id="message" placeholder="Ваше сообщение" required></textarea>
+                <button type="submit">Отправить сообщение</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Учебный проект. Все права защищены.</p>
+    </footer>
+    <script src="/js/main.js"></script>
+</body>
+</html>
